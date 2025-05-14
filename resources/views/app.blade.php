@@ -9,7 +9,7 @@
     @inertiaHead
 
 </head>
-<body>
+<body style="height: 10000px">
     @inertia
 </body>
 </html>

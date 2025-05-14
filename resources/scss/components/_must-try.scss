@@ -1,0 +1,68 @@
+.must-try {
+    &__inner {
+        margin-top: 26px;
+        padding: 70px 0;
+    }
+    &__top {
+        text-align: center;
+    }
+    &__title {
+        margin: 10px 0 20px;
+        color: white;
+        font-size: 6.4rem;
+        font-weight: 500;
+        line-height: 1.15;
+        text-transform: capitalize;
+    }
+    &__desc {
+        margin: 0 auto;
+        max-width: 600px;
+        color: var(--third-color);
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+    &__category-list {
+        margin-top: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+    }
+    &__category-item {
+        position: relative;
+        color: white;
+        font-family: "Libre Bodoni";
+        font-size: 3rem;
+        font-weight: 500;
+        line-height: 1.33;
+        transition: all 0.3s ease-in-out;
+        &::after {
+            // z-index: 1;
+            position: absolute;
+            bottom0: 0;
+            left: 0;
+            content: "";
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            height: 1px;
+            transform: scaleX(0);
+            background-color: var(--dark-orange);
+        }
+        &:hover {
+            cursor: pointer;
+            color: var(--dark-orange);
+
+            &::after {
+                transform: scaleX(1);
+            }
+        }
+    }
+    &__food-list {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 30px;
+        row-gap: 40px;
+    }
+}

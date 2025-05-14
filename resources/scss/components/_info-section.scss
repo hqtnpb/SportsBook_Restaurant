@@ -1,0 +1,52 @@
+.info-section__inner {
+    display: flex;
+    margin-top: 48px;
+    padding: 54px 0;
+}
+
+.info-details {
+    padding: 119px 175px;
+    background-image: url("/resources/js/assets/images/find-us__img.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    text-align: center;
+    &__title {
+        color: white;
+        font-size: 2.4rem;
+        font-weight: 500;
+        line-height: 1.42;
+        text-transform: capitalize;
+    }
+    &__desc {
+        margin-top: 10px;
+        color: white;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 1.63;
+    }
+}
+.info-opening {
+    width: 50%;
+    background-color: var(--dark-orange);
+    padding: 73px 144px;
+    text-align: center;
+    &__title {
+        color: var(--background-color);
+        font-size: 2.4rem;
+        font-weight: 500;
+        line-height: 1.41;
+        text-transform: capitalize;
+    }
+    &__details {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        color: var(--background-color);
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.63;
+    }
+}

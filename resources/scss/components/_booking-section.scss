@@ -1,0 +1,80 @@
+.booking-section {
+    &__inner {
+        padding: 35px 0;
+        margin-top: 54px;
+        display: flex;
+    }
+}
+.booking-left {
+    width: 50%;
+    padding: 40px 0 40px 40px;
+    background-color: var(--dark-orange);
+    &__title {
+        color: var(--background-color);
+        font-size: 4rem;
+        font-weight: 500;
+        line-height: 1.25;
+        text-transform: capitalize;
+    }
+    &__form {
+        display: flex;
+        align-items: center;
+        margin-top: 40px;
+        gap: 100px;
+    }
+    &__date {
+        position: relative;
+        &-title {
+            color: var(--background-color);
+            font-size: 2.4rem;
+            font-weight: 500;
+            line-height: 1.42;
+            text-transform: capitalize;
+        }
+        &-input {
+            margin-top: 10px;
+            width: 60px;
+            background-color: transparent;
+            opacity: 0;
+            color: var(--background-color);
+            font-family: "Libre Bodoni";
+            font-size: 4rem;
+            font-weight: 500;
+            line-height: 1.25;
+            text-transform: capitalize;
+        }
+        &-icon {
+            position: absolute;
+            bottom: 20%;
+            right: 20px;
+        }
+    }
+    &__guests {
+        position: relative;
+        &-icon--increase {
+            position: absolute;
+            top: 45px;
+            right: 20px;
+        }
+        &-icon--decrease {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+    }
+    &__action {
+        margin-top: 75px;
+        padding: 15px 118px;
+        background-color: var(--background-color);
+        color: #fff;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 1.62;
+    }
+}
+.booking-right {
+    width: 50%;
+    &__img{
+        width: 100%;
+    }
+}

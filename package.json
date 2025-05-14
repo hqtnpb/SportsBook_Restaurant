@@ -18,6 +18,8 @@
     "dependencies": {
         "@inertiajs/vue3": "^2.0.8",
         "@vitejs/plugin-vue": "^5.2.3",
+        "element-plus": "^2.9.10",
+        "vuex": "^4.0.2",
         "vuex-persist": "^3.1.3"
     }
 }

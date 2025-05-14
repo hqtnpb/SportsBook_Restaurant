@@ -1,0 +1,29 @@
+.food-item {
+    display: flex;
+    align-items: center;
+    &__img {
+        width: 76px;
+        height: 76px;
+        object-fit: cover;
+    }
+    &__title {
+        max-width: 302px;
+        margin-left: 20px;
+        color: white;
+        font-size: 3rem;
+        font-weight: 500;
+        line-height: 1.33;
+        word-wrap: break-word;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+    }
+    &__price {
+        margin-left: auto;
+        color: white;
+        font-size: 3rem;
+        font-weight: 500;
+        line-height: 1.33;
+    }
+}

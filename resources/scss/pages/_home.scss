@@ -1,0 +1,35 @@
+.stat {
+    margin-top: 70px;
+    width: 100%;
+    height: 194px;
+    display: flex;
+    justify-content: center;
+    gap: 127px;
+    background-image: url("/resources/js/assets/images/hero_backgr_img.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #333;
+    .stat-info {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        &__num {
+            color: white;
+            font-family: "Libre Bodoni";
+            font-size: 6.4rem;
+            font-weight: 500;
+            line-height: 1.15;
+            text-transform: capitalize;
+        }
+        &__text {
+            width: 148px;
+            color: white;
+            font-family: "Libre Bodoni";
+            font-size: 2.4rem;
+            font-weight: 500;
+            line-height: 1.41;
+            text-transform: capitalize;
+        }
+    }
+}

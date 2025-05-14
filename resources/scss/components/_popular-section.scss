@@ -1,0 +1,52 @@
+.popular {
+    margin-top: 140px;
+}
+.popular__inner {
+    display: block;
+    padding: 48px 0;
+}
+.popular-top {
+    width: 600px;
+    margin: 0 auto;
+    &__title {
+        text-align: center;
+        color: white;
+        font-size: 6.4rem;
+        font-weight: 500;
+        line-height: 1.15;
+        text-transform: capitalize;
+    }
+    &__desc {
+        margin-top: 20px;
+        color: var(--third-color);
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 1.62;
+    }
+}
+.popular__list {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-content: center;
+}
+.popular-more {
+    // margin-top: 30px;
+    margin: 30px auto 0;
+    width: 152px;
+    color: var(--dark-orange);
+    // text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.63;
+
+    &::after {
+        content: "";
+        display: block;
+        height: 1px;
+        background-color: var(--dark-orange);
+        margin-top: 4px;
+    }
+}

@@ -1,0 +1,103 @@
+.hero-section {
+    &__inner {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    .hero-content {
+        max-width: 58%;
+        &__text {
+            color: var(--third-color);
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 1.62;
+        }
+        &__title {
+            margin-top: 10px;
+            color: white;
+            font-size: 6.4rem;
+            font-weight: 500;
+            line-height: 1.15;
+            text-transform: capitalize;
+        }
+        &__desc {
+            margin-top: 20px;
+            max-width: 532px;
+            color: var(--third-color);
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 1.62;
+        }
+        &__btn {
+            position: relative;
+            display: block;
+            margin-top: 40px;
+            color: var(--dark-orange);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px; /* 162.5% */
+            &::after {
+                position: absolute;
+                content: "";
+                display: block;
+                width: 75px;
+                height: 1px;
+                bottom: -6px;
+                background-color: var(--dark-orange);
+            }
+        }
+    }
+    .hero-media {
+        max-width: 42%;
+        &__item {
+            position: relative;
+        }
+        &__img {
+            object-fit: cover;
+            display: block;
+            &--big {
+                width: 370px;
+                height: 436px;
+            }
+            &--small {
+                width: 80px;
+                height: 83px;
+                &:nth-child(2) {
+                    display: block;
+                    position: absolute;
+                    top: 70px;
+                    right: -80px;
+                }
+                &:nth-child(3) {
+                    display: block;
+                    position: absolute;
+                    top: 170px;
+                    right: -100px;
+                }
+                &:nth-child(4) {
+                    display: block;
+                    position: absolute;
+                    bottom: 70px;
+                    right: -80px;
+                }
+            }
+        }
+        &__tag-wrap {
+            position: absolute;
+            bottom: 70px;
+            left: -41px;
+            display: inline-block;
+            background-color: var(--dark-orange);
+        }
+        &__tag {
+            padding: 12px 16px 8px;
+            color: white;
+            font-family: "Libre Bodoni";
+            font-size: 2.4rem;
+            font-weight: 500;
+            line-height: 1.41;
+            text-transform: capitalize;
+        }
+    }
+}

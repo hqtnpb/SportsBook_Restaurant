@@ -4,6 +4,9 @@ import { createApp, h } from "vue";
 import { createInertiaApp } from "@inertiajs/vue3";
 import MainLayout from "./Layouts/MainLayout.vue";
 import { Head, Link } from "@inertiajs/vue3";
+import ElementPlus from "element-plus";
+import "element-plus/theme-chalk/src/index.scss";
+import store from "../../store";
 
 createInertiaApp({
     title: (title) => `SportBook Restaurant ${title}`,
@@ -16,6 +19,8 @@ createInertiaApp({
     setup({ el, App, props, plugin }) {
         createApp({ render: () => h(App, props) })
             .use(plugin)
+            .use(ElementPlus)
+            .use(store)
             .component("Head", Head)
             .component("Link", Link)
             .mount(el);

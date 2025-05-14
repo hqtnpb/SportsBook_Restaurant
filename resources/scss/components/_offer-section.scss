@@ -1,0 +1,37 @@
+.offer-section {
+    &__inner {
+        margin-top: 46px;
+        padding: 69px 0;
+    }
+    &__title {
+        color: #fff;
+        font-size: 6.4rem;
+        font-weight: 500;
+        line-height: 1.15;
+        text-transform: capitalize;
+    }
+}
+.offer-content {
+    &__left {
+        width: 50%;
+        padding: 23px 30px;
+    }
+    &__title {
+        width: 148px;
+        color: #fff;
+        font-size: 2.8rem;
+        font-weight: 600;
+        line-height: 1.36;
+        span {
+            color: var(--dark-orange);
+            -webkit-text-stroke-width: 1.15px;
+            -webkit-text-stroke-color: var(--Dark-Orange, #fb8f2c);
+            font-family: Playball;
+            font-size: 8.4rem;
+            font-weight: 400;
+            line-height: 82px; /* 97.619% */
+            letter-spacing: -5.04px;
+            text-transform: capitalize;
+        }
+    }
+}
