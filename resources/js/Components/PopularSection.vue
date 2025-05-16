@@ -11,9 +11,11 @@
                     </p>
                 </div>
                 <div class="popular__list">
-                    <PopularCard />
-                    <PopularCard />
-                    <PopularCard />
+                    <PopularCard
+                        v-for="product in products"
+                        :key="product.id"
+                        :product="product"
+                    />
                 </div>
                 <Link href="#!">
                     <p class="popular-more">
@@ -44,4 +46,7 @@
 <script setup>
 import PopularCard from "./PopularCard.vue";
 import { Link } from "@inertiajs/vue3";
+defineProps({
+    products: Array,
+});
 </script>

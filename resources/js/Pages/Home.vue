@@ -13,6 +13,12 @@ onMounted(async () => {
     const response = await axiosClient.get("list.php?c=list");
     console.log(response.data);
 });
+defineProps({
+    products: {
+        type: Array,
+        required: true,
+    },
+});
 </script>
 <template>
     <HeroSection />
@@ -30,7 +36,7 @@ onMounted(async () => {
             <div class="stat-info__text">Years of experience</div>
         </div>
     </div>
-    <PopularSection />
+    <PopularSection :products="products" />
     <InfoSection />
     <MustTrySection />
     <VisitSection />
